@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    int a[5]={10,20,30,40,50};
+    int *p=a;
+    printf("%d ", *(p+2)); // access 3rd element
+    printf("%d ", *(p+4)); // access 5th element
+    return 0;
+}
