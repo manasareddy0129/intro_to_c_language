@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+struct Student { int id; char name[50]; };
+int main() {
+    struct Student s1,s2;
+    scanf("%d %s %d %s",&s1.id,s1.name,&s2.id,s2.name);
+    if(s1.id==s2.id && strcmp(s1.name,s2.name)==0) printf("Equal");
+    else printf("Not Equal");
+    return 0;
+}
