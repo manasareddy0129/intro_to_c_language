@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+    FILE *fp=fopen("file.txt","r");
+    int lines=0;
+    char ch;
+    while((ch=fgetc(fp))!=EOF) if(ch=='\n') lines++;
+    fclose(fp);
+    printf("Lines=%d", lines);
+    return 0;
+}
