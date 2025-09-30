@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    char str[100];
+    fgets(str, sizeof(str), stdin);
+    int spaces=0, i=0;
+    while(str[i]!='\0') {
+        if(str[i]==' ') spaces++;
+        i++;
+    }
+    printf("%d", spaces);
+    return 0;
+}
