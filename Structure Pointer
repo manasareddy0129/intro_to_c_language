@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct Student {
+    int id;
+    char name[50];
+};
+int main() {
+    struct Student s;
+    struct Student *ptr=&s;
+    scanf("%d %s",&ptr->id,ptr->name);
+    printf("%d %s", ptr->id, ptr->name);
+    return 0;
+}
