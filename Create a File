@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    FILE *fp=fopen("file.txt","w");
+    if(fp!=NULL) printf("File created successfully");
+    else printf("Error creating file");
+    fclose(fp);
+    return 0;
+}
