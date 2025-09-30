@@ -1,0 +1,9 @@
+#include<stdio.h>
+struct Student { int id; char name[50]; };
+int main() {
+    struct Student s1, s2;
+    scanf("%d %s",&s1.id,s1.name);
+    s2=s1;
+    printf("%d %s", s2.id,s2.name);
+    return 0;
+}
