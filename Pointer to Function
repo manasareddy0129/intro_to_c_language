@@ -1,0 +1,9 @@
+#include<stdio.h>
+int add(int a,int b){ return a+b; }
+int main() {
+    int (*func_ptr)(int,int)=add;
+    int x,y;
+    scanf("%d %d",&x,&y);
+    printf("%d", func_ptr(x,y));
+    return 0;
+}
