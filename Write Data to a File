@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+    FILE *fp=fopen("file.txt","w");
+    char str[100];
+    fgets(str, sizeof(str), stdin);
+    fputs(str, fp);
+    fclose(fp);
+    printf("Data written successfully");
+    return 0;
+}
