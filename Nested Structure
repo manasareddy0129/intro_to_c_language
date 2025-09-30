@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct Date {
+    int day, month, year;
+};
+struct Employee {
+    char name[50];
+    struct Date dob;
+};
+int main() {
+    struct Employee e;
+    scanf("%s %d %d %d", e.name, &e.dob.day, &e.dob.month, &e.dob.year);
+    printf("%s %d-%d-%d", e.name, e.dob.day,e.dob.month,e.dob.year);
+    return 0;
+}
