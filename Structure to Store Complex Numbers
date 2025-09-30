@@ -1,0 +1,8 @@
+#include<stdio.h>
+struct Complex { float real; float imag; };
+int main() {
+    struct Complex c;
+    scanf("%f %f",&c.real,&c.imag);
+    printf("%.2f + %.2fi", c.real,c.imag);
+    return 0;
+}
