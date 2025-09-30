@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+    FILE *fp=fopen("file.txt","r");
+    int words=0;
+    char ch, prev=' ';
+    while((ch=fgetc(fp))!=EOF) {
+        if((ch==' '||ch=='\n'||ch=='\t')&&(prev!=' '&&prev!='\n'&&prev!='\t')) words++;
+        prev=ch;
+    }
+    fclose(fp);
+    printf("Words=%d", words);
+    return 0;
+}
