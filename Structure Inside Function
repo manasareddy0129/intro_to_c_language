@@ -1,0 +1,13 @@
+#include<stdio.h>
+struct Point {
+    int x,y;
+};
+struct Point createPoint(int a,int b) {
+    struct Point p={a,b};
+    return p;
+}
+int main() {
+    struct Point p = createPoint(5,10);
+    printf("%d %d", p.x,p.y);
+    return 0;
+}
